@@ -1,0 +1,133 @@
+
+body {
+ font-family: Arial, Verdana, sans-serif; 
+ font-size: 11pt; 
+ background-color: white; 
+ color: #333; 
+ margin-top:0; 
+ min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+a{
+	text-decoration:none;
+	color:black;
+}
+
+header{
+	text-align: center;
+	background-color: #3333FF;
+	width: 100%;
+	color:white;
+	margin-bottom: 20px;
+}
+header p{
+	font-size: 25pt
+}
+main{
+	background-color:white;
+	height:25px;
+	margin:0;
+	padding:0;
+}
+section{
+	width:45%
+}
+
+article{
+	width:45%
+}
+
+nav{
+	text-align: center
+}
+
+#ulMain{
+font-size:0;
+}
+#ulMain li{
+	font-size:20pt;
+	display:inline-block;
+	width:20%;
+	margin:0;
+	padding:0;
+}
+li a:active{
+	color: #3333FF;
+}
+p {  
+ 
+  font-family: verdana;
+  font-size: 20px;
+
+}
+.footer{
+    position: absolute;
+	background-color: #3333FF;
+    bottom: 0;
+    left: 0;
+	width: 100%;
+	height: 50pt;
+	color: white;
+	font-size:20px;
+	text-align:center;
+}
+
+.site-container {
+  display: flex;
+  width: 100%;
+}
+.content {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+aside{
+	width:45%;
+}
+
+.h1-centr{
+	text-align:center;
+}
+
+.pointed{
+	background-color:#3333FF;
+}
+
+.ulForAnimals{
+	font-size:20px;
+	padding-top:50px;
+	padding-bottom:10px;
+	text-align:center;	
+	list-style-type:none
+}
+
+.ulForAnimals li{
+	padding-top:10px;
+}
+
+
+.b-popup{
+    width:100%;
+    min-height:100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;	
+    top:0px;
+}
+.b-popup .b-popup-content{
+    margin:40px auto 0px auto;
+    width:50%;
+    height: 100px;
+    padding:10px;
+    background-color: #c5c5c5;
+    border-radius:5px;
+    box-shadow: 0px 0px 10px #000;
+}
+
+.b-popup-content a{
+	text-decoration: underline;
+	font-size: 12px;
+}

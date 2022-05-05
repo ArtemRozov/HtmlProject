@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		 <meta charset="utf-8">
+		 <link rel="stylesheet" href="styleCategories.css">
+		 <title>zoological guide</title>
+	</head>
+	<body>
+		<header>
+			<p> Zoological Guide </p>
+		</header>
+		
+		<main>
+			<nav class = "menu">
+				<ul id = "ulMain">
+					<li> <a href = "file:///D:/Programs/HTML_CSS/Head.html"> Main </a></li>
+					<li> <a href = "file:///D:/Programs/HTML_CSS/Categories.html" class = "pointed"> Categories </a></li>
+					<li> <a href = "file:///D:/Programs/HTML_CSS/Examples.html"> Examples </a></li>
+					<li> <a href = "tel: +380688755985"> Contacts </a></li>
+			</nav>
+		</main>
+		
+		<ul class = "ulForAnimals">
+			<li> <a href = "javascript:PopUpShowBirds()"> Birds </a> </li>
+			<li> <a href = "javascript:PopUpShowFishes()"> Fishs </a> </li>
+			<li> <a href = "javascript:PopUpShowAmphibians()"> Amphibians </a> </li>
+			<li> <a href = "javascript:PopUpShowReptiles()"> Reptiles </a> </li>
+			<li> <a href = "javascript:PopUpShowInvertebrates()"> Invertebrates </a> </li>
+			<li> <a href = "javascript:PopUpShowMammals()"> Mammals </a> </li>
+	    </ul>
+		
+		
+		
+		<div class="b-popup" id="popup-birds">
+			<div class="b-popup-content">
+				Birds are a type of warm-blooded vertebrate that are adapted to fly.
+				Not all birds can fly, but they do all have wings.
+				Birds have beaks that help them catch and swallow food.
+				The digestive system of a bird allows it to eat whenever it can and digest the food later.
+				Birds lay eggs to reproduce.
+				They are endothermic, meaning they maintain their own constant body temperature.
+				They are bipedal, which means they have two legs.
+				They have hollow bones and their bodies are covered in feathers.
+				Birds belong to the class called Aves.
+			<a href="javascript:PopUpHideBirds()">Hide popup</a>
+			</div>
+		</div>
+		
+		<div class="b-popup" id="popup-fishes">
+			<div class="b-popup-content">
+				Fish are also vertebrates, and they are considered the oldest-known vertebrates.
+
+				They are ectothermic, or cold-blooded, which means they rely on their surroundings to regulate their body temperature.
+				Fish have fins.
+				Most, but not all, fish have bodies covered in scales and breathe through gills.
+				Fish live underwater.
+			<a href="javascript:PopUpHideFishes()">Hide popup</a>
+			</div>
+		</div>
+		
+		<div class="b-popup" id="popup-Amphibians">
+			<div class="b-popup-content">
+				All amphibians are vertebrates, and they need moist environments or water to survive.
+
+				They are cold-blooded.
+				They absorb water and breathe through their thin skin.
+				They have at least one special skin gland used for defense.
+				Most follow the life cycle of egg-larva-adult.
+			<a href="javascript:PopUpHideAmphibians()">Hide popup</a>
+			</div>
+		</div>
+
+		<div class="b-popup" id="popup-Reptiles">
+			<div class="b-popup-content">
+				Reptiles are thought to be the first vertebrates to live completely on land. But, not all reptiles live only on land today.
+
+				They are cold-blooded, or ectothermic.
+				They lay eggs to reproduce.
+				They have four legs or are descended from animals with four legs.
+				They breathe through lungs.
+				Their bodies are covered in scales or scutes.
+			<a href="javascript:PopUpHideReptiles()">Hide popup</a>
+			</div>
+		</div>
+		
+		<div class="b-popup" id="popup-Invertebrates">
+			<div class="b-popup-content">
+				Approximately 95% of all animals are invertebrates. Invertebrates do not have a backbone. There are different types of invertebrates, but they all share a few characteristics.
+
+				They are made up of many cells that work together or are multicellular.
+				Most, but not all, have tissues, cells that work together in a more complex way.
+				Most, but not all, can move.
+				There are over 35 phyla of invertebrates.
+				They generally have soft bodies.
+			<a href="javascript:PopUpHideInvertebrates()">Hide popup</a>
+			</div>
+		</div>
+		
+		<div class="b-popup" id="popup-Mammals">
+			<div class="b-popup-content">
+				Mammals are another type of vertebrate that belong to the class Mammalia.
+
+				Young mammals get nourishment from milk produced by their mothers.
+				Most mammals have hair.
+				Their jaw is hinged directly to their skull, unlike all other vertebrates.
+				Almost all mammals give birth to live babies.
+				They are endothermic, or warm-blooded.
+			<a href="javascript:PopUpHideMammals()">Hide popup</a>
+			</div>
+		</div>
+
+
+		<footer class="footer">
+		  <text> Footer </text> 
+		</footer> 
+								
+	</body>
+</html>
+
+<script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+<script>
+    $(document).ready(function(){
+        //Скрыть PopUp при загрузке страницы    
+        PopUpHideBirds();
+		PopUpHideFishes();
+		PopUpHideAmphibians();
+		PopUpHideReptiles();
+		PopUpHideInvertebrates();
+		PopUpHideMammals();		
+    });
+    //Функция отображения PopUp
+    function PopUpShowBirds(){
+		$("#popup-birds").show();
+        	
+    }
+    //Функция скрытия PopUp
+    function PopUpHideBirds(){
+		$("#popup-birds").hide();
+        
+    }
+	
+	function PopUpShowFishes(){
+		$("#popup-fishes").show();
+        	
+    }
+    //Функция скрытия PopUp
+    function PopUpHideFishes(){
+		$("#popup-fishes").hide();
+        
+    }
+	
+	function PopUpShowAmphibians(){
+		$("#popup-Amphibians").show();
+        	
+    }
+    //Функция скрытия PopUp
+    function PopUpHideAmphibians(){
+		$("#popup-Amphibians").hide();
+        
+    }
+	
+	function PopUpShowReptiles(){
+		$("#popup-Reptiles").show();
+        	
+    }
+    //Функция скрытия PopUp
+    function PopUpHideReptiles(){
+		$("#popup-Reptiles").hide();
+        
+    }
+	
+	function PopUpShowInvertebrates(){
+		$("#popup-Invertebrates").show();
+        	
+    }
+    //Функция скрытия PopUp
+    function PopUpHideInvertebrates(){
+		$("#popup-Invertebrates").hide();
+        
+    }
+	
+	function PopUpShowMammals(){
+		$("#popup-Mammals").show();
+        	
+    }
+    //Функция скрытия PopUp
+    function PopUpHideMammals(){
+		$("#popup-Mammals").hide();
+        
+    }
+</script>
